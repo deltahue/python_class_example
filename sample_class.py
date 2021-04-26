@@ -61,3 +61,7 @@ class SampleClass(object):
             parameter2=config["parameter2"],
             config=config,
         )
+
+if __name__ == "__main__":
+    path = "sample_config.yaml"
+    sample = SampleClass.from_file(path)
