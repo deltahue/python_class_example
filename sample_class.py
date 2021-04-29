@@ -3,7 +3,7 @@ This code shows how to implment a from_fiule method to initialize a class
 
 The advantage is that we can initialize the class in multiple ways this way depending on the circumstances
 
-Credit goes to Lukas Fröhlich, where I saw this the first time.
+Credit goes to Lukas Fröhlich's bayesopt4ros repo, where I have seen this the first time.
 """
 
 import yaml
@@ -64,4 +64,10 @@ class SampleClass(object):
 
 if __name__ == "__main__":
     path = "sample_config.yaml"
-    sample = SampleClass.from_file(path)
+    # regular init:
+    sample_regular = SampleClass("1", "Hello World from the regular init", None)
+    print(sample_regular.parameter2)
+
+    # from file init:
+    sample_from_file = SampleClass.from_file(path)
+    print(sample_from_file.parameter2)
