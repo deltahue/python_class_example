@@ -1,6 +1,6 @@
-# Sample `from_file()` method to initialize a class in python
+# A sample class with a `from_file()` method
 
-This repos contains a short demo, how to implement a `.from_file()` method in a python class.
+This repos contains a short demo, how to implement a `.from_file()` method in a python class to initialize it.
 
 It contains a sample class and a sample config yaml file which show the behaviour. I think this can be really useful in larger projects to keep the initialization of classes flexible.
 
